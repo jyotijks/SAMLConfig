@@ -1,0 +1,29 @@
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://idp.ssocircle.com">
+<IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+<ArtifactResolutionService index="0" isDefault="true" Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.ssocircle.com:443/sso/ArtifactResolver/metaAlias/publicidp"/>
+<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.ssocircle.com:443/sso/IDPSloRedirect/metaAlias/publicidp" ResponseLocation="https://idp.ssocircle.com:443/sso/IDPSloRedirect/metaAlias/publicidp"/>
+<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.ssocircle.com:443/sso/IDPSloPost/metaAlias/publicidp" ResponseLocation="https://idp.ssocircle.com:443/sso/IDPSloPost/metaAlias/publicidp"/>
+<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.ssocircle.com:443/sso/IDPSloSoap/metaAlias/publicidp"/>
+<ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.ssocircle.com:443/sso/IDPMniRedirect/metaAlias/publicidp" ResponseLocation="https://idp.ssocircle.com:443/sso/IDPMniRedirect/metaAlias/publicidp"/>
+<ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.ssocircle.com:443/sso/IDPMniPOST/metaAlias/publicidp" ResponseLocation="https://idp.ssocircle.com:443/sso/IDPMniPOST/metaAlias/publicidp"/>
+<ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.ssocircle.com:443/sso/IDPMniSoap/metaAlias/publicidp"/>
+<NameIDFormat>
+urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
+</NameIDFormat>
+<NameIDFormat>
+urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+</NameIDFormat>
+<NameIDFormat>
+urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
+</NameIDFormat>
+<NameIDFormat>
+urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
+</NameIDFormat>
+<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos</NameIDFormat>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.ssocircle.com:443/sso/SSORedirect/metaAlias/publicidp"/>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.ssocircle.com:443/sso/SSOPOST/metaAlias/publicidp"/>
+<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.ssocircle.com:443/sso/SSOSoap/metaAlias/publicidp"/>
+<NameIDMappingService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.ssocircle.com:443/sso/NIMSoap/metaAlias/publicidp"/>
+</IDPSSODescriptor>
+</EntityDescriptor>
